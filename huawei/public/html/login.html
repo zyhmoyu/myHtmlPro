@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>login</title>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+	</head>
+	<body>
+		<header class="login">
+			<div class="head_center">
+				<img src="../img/login/huaweiLogo.png"/>
+				<b>|</b>
+				<b>华为商城</b>
+			</div>
+		</header>
+		<div class="info">
+			<p>
+				<span>依据《网络安全法》，为保障您的帐号安全与正常使用，请尽快绑定您的手机号，感谢您的理解及支持！</span>
+			</p>
+		</div>
+		<div class="login-bg">
+			<div class="login-bg2">
+				<div class="login-area">
+					<div class="h clef">
+						<span id="zhdl">账号登录</span>
+						<span id="smdl">扫码登录</span>
+					</div>
+					<script type="text/javascript">
+						window.onload=function(){
+							var zhdl = document.getElementById('zhdl');
+							var smdl_info = document.getElementById('smdl_info');
+							var smdl = document.getElementById('smdl');
+							var zhdl_info = document.getElementById('zhdl_info');
+							zhdl.style.color = '#B40707';
+							smdl.onclick=function(){
+								smdl.style.color = "#B40707";
+								zhdl.style.color = '#333';
+								zhdl_info.style.display = "none";
+								smdl_info.style.display = "block";
+							}
+							zhdl.onclick=function(){
+								smdl.style.color = "#333";
+								zhdl.style.color = '#B40707';
+								zhdl_info.style.display = "block";
+								smdl_info.style.display = "none";
+							}
+						}
+					</script>
+					<div id="zhdl_info">
+						<input type="text" id="uname" placeholder="手机号/邮件地址" />
+						<input type="password" id="upwd" placeholder="密码" />
+						<div class="yz">
+							<a href="#">短信验证码登录</a>
+						</div>
+						<a href="#">登录</a>
+						<div class="jhw clef">
+							<input type="checkbox" name="" id="hw" value="1" hidden/>
+							<label for="hw">
+								<i></i>
+								<span>记住华为账号</span>
+							</label>
+							<a href="#">更多</a>
+						</div>
+						<p><a href="regist_phone.html">注册账号</a><b>|</b><a href="#">忘记密码?</a></p>
+						<div class="thirdlogin">
+							<div class="thirdlogin_title">
+								<i class="left"></i>
+								<span>其他方式登录</span>
+								<i class="right"></i>
+							</div>
+							<div class="thirdlogindiv">
+								<span class="qq">
+									<a href="#"></a>
+								</span>
+								<span class="zfb">
+									<a href="#"></a>
+								</span>
+								<span class="wx">
+									<a href="#"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div id="smdl_info">
+						<div class="erweima">
+							<img src="../img/login/getqrWeb.png" alt="" />
+						</div>
+						<img src="../img/login/qrCode-help.png"/>
+						<div class="desc">
+							<p>
+								使用
+								<span>华为移动服务APP</span>
+								扫一扫
+							</p>
+							<p>若您使用华为手机，请进入“设置”>“华为帐号”扫码登录。</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p>
+				<a href="#">华为帐号用户协议</a>
+				<b>|</b>
+				<a href="#">关于华为帐号与隐私的声明</a>
+				<b>|</b>
+				<a href="#">常见问题</a>
+			</p>
+			<p>
+				Copyright © 2011-2018  华为软件技术有限公司  版权所有  保留一切权利  苏B2-20070200号 | 苏ICP备09062682号-9
+			</p>
+		</footer>
+	</body>
+</html>
